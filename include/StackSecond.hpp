@@ -1,4 +1,4 @@
-//Copyright by Enigma
+//Copyright by Margarita-creator
 
 #ifndef INCLUDE_STACKSECOND_HPP_
 #define INCLUDE_STACKSECOND_HPP_
@@ -8,13 +8,12 @@
 
 
 template <typename T>
-class StackTwo
-{
+class TheSecondStack {
  public:
-  StackTwo(const StackTwo&) = delete;
-  StackTwo& operator = (const StackTwo&) = delete;
-  StackTwo(): ref(nullptr) {}
-  ~StackTwo(){
+  TheSecondStack(const TheSecondStack&) = delete;
+  TheSecondStack& operator = (const TheSecondStack&) = delete;
+  TheSecondStack(): ref(nullptr) {}
+  ~TheSecondStack(){
     while (ref) {
       pop();
     }
@@ -37,7 +36,7 @@ class StackTwo
       ref = std::move(ref->last);
       return del;
     }
-    throw std::runtime_error("Stack is empty");
+    throw std::runtime_error("Empty");
   }
  private:
   struct StackObj{

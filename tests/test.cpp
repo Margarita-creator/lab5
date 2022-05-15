@@ -1,4 +1,4 @@
-//Copyright by Enigma
+//Copyright by Margarita-creator
 
 #include <gtest/gtest.h>
 #include "Stack.hpp"
@@ -53,7 +53,7 @@ class Myclass {
   std::string t2;
 };
 TEST(Second, True) {
-  StackTwo<Myclass> MySteck;
+  TheSecondStack<Myclass> MySteck;
   int t0 = 2;
   double t1 = 2.2;
   std::string t2 = "2";

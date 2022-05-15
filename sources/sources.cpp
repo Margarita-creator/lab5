@@ -1,4 +1,4 @@
-//Copyright by Enigma
+//Copyright by Margarita-creator
 
 #include <stdexcept>
 
